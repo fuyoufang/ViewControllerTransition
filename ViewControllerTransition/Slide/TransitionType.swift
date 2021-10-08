@@ -15,8 +15,8 @@ enum TransitionType {
 }
 
 enum TabOperationDirection {
-    case Left, Right
+    case left, right
 }
 enum ModalOperation {
-    case Presentation, Dismissal
+    case presentation, dismissal
 }

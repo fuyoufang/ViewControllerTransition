@@ -13,6 +13,7 @@ class OverlayPresentationController: UIPresentationController {
     let dimmingView = UIView().then {
         $0.backgroundColor = UIColor(white: 0.0, alpha: 0.2)
         $0.alpha = 0
+        UINavigationControllerDelegate
     }
     
     // Presentation 转场开始前该方法被调用。

@@ -28,6 +28,8 @@
 		A3A52BB726E0674500F2D9BC /* SlideAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A52BB626E0674500F2D9BC /* SlideAnimationViewController.swift */; };
 		A3A52BBA26E0677E00F2D9BC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A52BB926E0677E00F2D9BC /* UIColor+Extension.swift */; };
 		BAFC7B71645A3A867D9DCAB1 /* Pods_ViewControllerTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DBB23EB385764891B6B60B /* Pods_ViewControllerTransition.framework */; };
+		C5132B7326E34A9F001ECDB4 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5132B7226E34A9F001ECDB4 /* TransitionDelegate.swift */; };
+		C567C2AC26FCCBD500F2228F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567C2AB26FCCBD500F2228F /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		A3A52BB626E0674500F2D9BC /* SlideAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAnimationViewController.swift; sourceTree = "<group>"; };
 		A3A52BB926E0677E00F2D9BC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B03C15425E60EF50809350A1 /* Pods-ViewControllerTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewControllerTransition.debug.xcconfig"; path = "Target Support Files/Pods-ViewControllerTransition/Pods-ViewControllerTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		C5132B7226E34A9F001ECDB4 /* TransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		C567C2AB26FCCBD500F2228F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C9B26C293DCA98B5EAA0E7E2 /* Pods-ViewControllerTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewControllerTransition.release.xcconfig"; path = "Target Support Files/Pods-ViewControllerTransition/Pods-ViewControllerTransition.release.xcconfig"; sourceTree = "<group>"; };
 		CFF197535A1B1AEBB1EEB8E6 /* Pods-ViewControllerTransition-ViewControllerTransitionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewControllerTransition-ViewControllerTransitionUITests.release.xcconfig"; path = "Target Support Files/Pods-ViewControllerTransition-ViewControllerTransitionUITests/Pods-ViewControllerTransition-ViewControllerTransitionUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4DBB23EB385764891B6B60B /* Pods_ViewControllerTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewControllerTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,13 +138,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A31F4F6B26E1B83500F34759 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		A31F4F6C26E1B83C00F34759 /* Demo1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +191,8 @@
 		A39796B226DA11B200F4D9F2 /* ViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
-				A31F4F6B26E1B83500F34759 /* New Group */,
+				C567C2AA26FCCBBE00F2228F /* Tab */,
+				C5132B7126E34A8A001ECDB4 /* TransitionDelegate */,
 				A3861C0D26E0ABBE009B0995 /* Overlay */,
 				A3A52BB826E0676A00F2D9BC /* Extension */,
 				A3A52BAF26E0623F00F2D9BC /* Slide */,
@@ -244,6 +242,22 @@
 				A3A52BB926E0677E00F2D9BC /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C5132B7126E34A8A001ECDB4 /* TransitionDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C5132B7226E34A9F001ECDB4 /* TransitionDelegate.swift */,
+			);
+			path = TransitionDelegate;
+			sourceTree = "<group>";
+		};
+		C567C2AA26FCCBBE00F2228F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C567C2AB26FCCBD500F2228F /* TabBarController.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +501,7 @@
 				A3A52BB526E0672B00F2D9BC /* SlideAnimationNavigationController.swift in Sources */,
 				A3A52BB126E0638500F2D9BC /* TransitionType.swift in Sources */,
 				A39796B826DA11B200F4D9F2 /* ViewController.swift in Sources */,
+				C567C2AC26FCCBD500F2228F /* TabBarController.swift in Sources */,
 				A31F4F7126E1B8A900F34759 /* OverlayPresentationController.swift in Sources */,
 				A31F4F7326E1B94400F34759 /* OverlayWithPresentationAnimationController.swift in Sources */,
 				A3A52BB326E063F500F2D9BC /* SlideAnimationController.swift in Sources */,
@@ -495,6 +510,7 @@
 				A3A52BB726E0674500F2D9BC /* SlideAnimationViewController.swift in Sources */,
 				A31F4F7526E1BA2E00F34759 /* OverlayWithPresentationViewController.swift in Sources */,
 				A39796B626DA11B200F4D9F2 /* SceneDelegate.swift in Sources */,
+				C5132B7326E34A9F001ECDB4 /* TransitionDelegate.swift in Sources */,
 				A3A52BBA26E0677E00F2D9BC /* UIColor+Extension.swift in Sources */,
 				A3861C1126E0ABDB009B0995 /* OverlayViewController.swift in Sources */,
 			);
@@ -676,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH8WQW889D;
 				INFOPLIST_FILE = ViewControllerTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,6 +713,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH8WQW889D;
 				INFOPLIST_FILE = ViewControllerTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

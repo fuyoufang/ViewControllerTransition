@@ -14,9 +14,9 @@ class SlideAnimationViewController: UIViewController {
         view.backgroundColor = .random
         title = "title:\(Int(arc4random() % 256))"
         
-        let closeBarButton = UIBarButtonItem(systemItem: .close)
-        closeBarButton.action = #selector(close)
-        closeBarButton.target = self
+        let closeBarButton = UIBarButtonItem(barButtonSystemItem: .close,
+                                             target: self,
+                                             action: #selector(close))
         navigationItem.rightBarButtonItem = closeBarButton
     }
     
